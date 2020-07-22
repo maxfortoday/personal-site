@@ -87,7 +87,7 @@ const Contact = () => {
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at: </p>
+          <p>Feel free to get in touch. You can write something like: </p>
           <div
             className="inline-container"
             style={validateText(message) ? {} : { color: 'red' }}
@@ -96,7 +96,7 @@ const Contact = () => {
           >
             <a href={validateText(message) ? `mailto:${message}@mldangelo.com` : ''}>
               <span>{message}</span>
-              <span>@mldangelo.com</span>
+              {/* <span>@mldangelo.com</span> */}
             </a>
           </div>
         </div>

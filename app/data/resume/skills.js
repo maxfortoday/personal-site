@@ -3,63 +3,63 @@
 
 const skills = [{
   title: 'Javascript',
-  competency: 4,
+  competency: 5,
   category: ['Web Development', 'Languages', 'Javascript'],
 },
 {
   title: 'Node.JS',
-  competency: 2,
+  competency: 5,
   category: ['Web Development', 'Javascript'],
 },
 {
   title: 'React',
-  competency: 3,
+  competency: 5,
   category: ['Web Development', 'Javascript'],
 },
 {
   title: 'Redux',
-  competency: 2,
+  competency: 5,
   category: ['Web Development', 'Javascript'],
 },
 {
   title: 'Heroku',
-  competency: 2,
+  competency: 5,
   category: ['Web Development', 'Tools'],
 },
 {
   title: 'MongoDB',
-  competency: 1,
+  competency: 5,
   category: ['Web Development', 'Databases'],
 },
 {
   title: 'SQL',
-  competency: 1,
+  competency: 5,
   category: ['Web Development', 'Databases', 'Languages'],
 },
 {
   title: 'Data Mining',
-  competency: 1,
+  competency: 5,
   category: ['Data Science'],
 },
 {
   title: 'npm',
-  competency: 2,
+  competency: 5,
   category: ['Tools'],
 },
 {
   title: 'Express.JS',
-  competency: 2,
+  competency: 5,
   category: ['Web Development', 'Javascript'],
 },
 {
   title: 'Git',
-  competency: 3,
+  competency: 5,
   category: ['Tools'],
 },
 
 {
   title: 'Firebase',
-  competency: 2,
+  competency: 5,
   category: ['Tools', 'Web Development'],
 },
 {
@@ -74,7 +74,7 @@ const skills = [{
 },
 {
   title: 'jquery',
-  competency: 4,
+  competency: 5,
   category: ['Web Development', 'Languages'],
 },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
