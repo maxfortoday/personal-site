@@ -1,8 +1,6 @@
-# [My Site](https://maxfortoday.github.io/personal-site/) and simplified [maxfortoday](maxfortoday)
+# [My Site](https://maxfortoday.github.io/personal-site/)
 
 My personal website. Easily modifiable, and built using modern javascript with Node.js, React, Express, React-Router, Hot Module Reloading, Webpack and many other technologies.
-
-The master branch of this repository contains a simplified version of my website intended for serverless hosting on github pages. To view the source for the version hosted at [My Site](https://maxfortoday.github.io/personal-site/), checkout the [server](https://maxfortoday.github.io/personal-site/tree/server) branch.
 
 ## A note on adapting this repository to your own personal website
 
@@ -22,7 +20,7 @@ You may wish to fork this repository or remove my remote origin and add your own
 1. To download the repository and install dependencies, run the following commands:
 
     ```bash
-    git clone git://github.com/maxfortoday/personal-site.git
+    git clone https://github.com/maxfortoday/personal-site.git
     cd personal-site
     npm install
     ```
