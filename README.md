@@ -68,7 +68,7 @@ You may wish to fork this repository or remove my remote origin and add your own
 
 That's it.
 
-Please feel free to reach out to me by filing an issue or at [admtrigger@gmail.com](mailto:admtrigger@gmail.com) for help configuring your project.
+Please feel free to reach out to me by filing an issue for help configuring your project.
 
 ## Contributors
 
