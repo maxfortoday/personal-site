@@ -45,6 +45,9 @@ export interface Project {
   image?: string;
   date: string;
   desc: string;
+  problem?: string;
+  impact?: string[];
+  featured?: boolean;
 }
 
 export interface StatRow {

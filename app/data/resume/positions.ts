@@ -6,11 +6,11 @@ const positions: Position[] = [{
   link: 'https://www.phoenix.co.il/',
   daterange: '2025 – Present',
   points: [
-    'Lead systems serving ~400K users across production environments.',
-    'Design and drive complex AWS architectures across teams and network boundaries to support secure, resilient systems.',
-    'Established observability strategy including monitoring, logging pipelines, and proactive incident readiness.',
-    'Mentor and onboard new Team Leads, supporting organizational scaling and distributed leadership.',
-    'Drive engineering excellence through talent development, operational standards, and adoption of modern AI-enabled engineering workflows.',
+    'Own platform stability and cloud architecture for systems serving ~400K users — the core financial mobile platform for one of Israel\'s top-5 insurance companies.',
+    'Drive AWS architecture across team and network boundaries: secure VPC design, API Gateway, Lambda, RDS Aurora, and AppSync with full observability coverage.',
+    'Established the org-wide observability strategy — monitoring pipelines, alerting standards, and incident readiness — reducing MTTR across teams.',
+    'Mentor and develop Team Leads as a force multiplier: leadership capacity, not just code output.',
+    'Introduced AI-assisted engineering workflows (agentic code review, architecture planning, automated documentation) that measurably improved delivery velocity.',
   ],
 }, {
   company: 'Aman Group / Phoenix Insurance',
@@ -18,11 +18,11 @@ const positions: Position[] = [{
   link: 'https://www.phoenix.co.il/',
   daterange: '2024 – 2025',
   points: [
-    'Led frontend and backend teams delivering production-grade React Native and Node.js platforms.',
-    'Architected AWS cloud environments leveraging API Gateway, Lambda, IAM, and AppSync with integrated observability and identity solutions.',
-    'Owned end-to-end Agile delivery, ensuring execution quality, cross-team alignment, and engineering standards.',
-    'Partnered with product and business stakeholders to translate priorities into scalable technical solutions.',
-    'Fostered a high-performance engineering culture focused on innovation, experimentation, and continuous improvement.',
+    'Led cross-functional frontend and backend teams delivering production React Native and Node.js platforms under tight regulatory and SLA constraints.',
+    'Architected the cloud environment from first principles: API Gateway unified auth layer, Lambda compute, IAM boundaries, and AppSync real-time data layer.',
+    'Owned end-to-end Agile delivery — sprint execution, cross-team alignment, quality gates, and release management.',
+    'Drove the zero-downtime Legacy System Migration: CDC pipeline (AWS DMS), dual-system rollout, per-user feature flags, and full legacy decommission.',
+    'Built the high-performance engineering culture that reduced delivery risk and enabled the org to scale from 1 to 3 teams.',
   ],
 }, {
   company: 'Aman Group / Twilio Division',
@@ -30,10 +30,10 @@ const positions: Position[] = [{
   link: 'https://www.aman-group.com/',
   daterange: '2023 – 2024',
   points: [
-    'Led a multi-disciplinary R&D organization: Team Leads, Developers, DevOps, Infrastructure, Security, and Technical Support.',
-    'Owned full delivery lifecycle across communication and enterprise messaging platforms.',
-    'Managed SLA adherence and cross-department execution.',
-    'Introduced automation and AI-driven workflows that improved operational efficiency and delivery speed.',
+    'Owned the full R&D organization: Team Leads, Developers, DevOps, Infrastructure, Security, and Technical Support across communication and enterprise messaging platforms.',
+    'Delivered the Enterprise API Gateway: unified Auth0 authentication for 500+ B2B clients at 2M+ API calls/day — without modifying a single legacy system.',
+    'Managed SLA adherence across critical communication infrastructure and drove cross-department execution alignment.',
+    'Introduced AI-driven automation into delivery workflows, improving operational throughput and reducing manual overhead.',
   ],
 }, {
   company: 'Aman Group / Twilio Division',
@@ -41,9 +41,9 @@ const positions: Position[] = [{
   link: 'https://www.aman-group.com/',
   daterange: '2020 – 2022',
   points: [
-    'Led a full-stack React / Node.js team delivering end-to-end communication platforms.',
-    'Ensured SLA adherence and delivery governance via Azure DevOps.',
-    'Defined development standards and quality controls.',
+    'Led a full-stack React / Node.js team delivering end-to-end communication platforms at enterprise scale.',
+    'Defined and enforced development standards, quality controls, and delivery governance via Azure DevOps.',
+    'Ensured SLA adherence on production systems with real business-continuity requirements.',
   ],
 }, {
   company: 'TenenGroup LTD',
@@ -51,8 +51,8 @@ const positions: Position[] = [{
   link: 'https://www.tenengroup.com/',
   daterange: '2018 – 2020',
   points: [
-    'Built responsive React.js UIs, collaborating with designers using Sketch and InVision.',
-    'Conducted A/B testing and dynamic personalization using Dynamic Yield.',
+    'Built responsive React.js UIs for high-traffic consumer products, collaborating directly with design on Sketch and InVision.',
+    'Drove measurable conversion improvements through A/B testing and dynamic personalization via Dynamic Yield.',
   ],
 }, {
   company: 'TenenGroup LTD',
@@ -60,7 +60,7 @@ const positions: Position[] = [{
   link: 'https://www.tenengroup.com/',
   daterange: '2017',
   points: [
-    'Oversaw full-cycle site deployment and content optimization.',
+    'Managed full-cycle site deployment, content optimization, and production stability.',
   ],
 }];
 

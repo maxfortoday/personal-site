@@ -1,19 +1,32 @@
 
-I'm a software engineering leader with a passion for building systems that actually matter — the kind that operate at scale, handle real-world complexity, and directly impact business outcomes.
+I'm an Engineering Leader with 9+ years building systems that operate at scale — from migrating live enterprise platforms with zero downtime to shipping AI-powered products used by hundreds of thousands of users.
 
-Over the past 9+ years, I've worked at the intersection of infrastructure, backend systems, and product, leading teams and designing production-grade architectures in high-demand environments. My experience ranges from building secure API layers on top of legacy systems, to designing event-driven pipelines, to leading critical system migrations with zero downtime.
+## What I Do
 
-Today, I lead engineering efforts around core platform systems — including authentication, monitoring, and production stability — for large-scale applications serving hundreds of thousands of users. I enjoy solving complex problems where reliability, scalability, and business logic all collide.
+**Systems at Scale** — I design and own production architectures that handle real load: event-driven pipelines, API gateways serving millions of requests per day, and distributed systems across complex network and organizational boundaries.
 
-More recently, I've been focused on integrating AI into real products and workflows — building systems that combine LLMs, structured data, and decision-making logic to create practical, user-facing value. I'm especially interested in how AI can move from "nice demos" to deterministic, production-ready systems.
+**Infrastructure + Product** — I operate at the intersection of platform engineering and product delivery. I care about reliability, observability, and the operational reality of what actually gets shipped to users.
 
-I'm at my best in environments where I can:
+**AI in Production** — I build AI-powered systems that go beyond demos: LLMs with structured outputs, feedback loops for accuracy improvement, and agent workflows that create real delivery leverage — not just interesting experiments.
 
-* Take ownership of complex systems end-to-end
-* Lead strong engineers and unblock tough challenges
-* Bridge the gap between technical architecture and real product impact
+## What I've Built
 
-Outside of work, I'm driven by continuous improvement — whether it's in engineering, fitness, or building new things from scratch.
+- Migrated a live enterprise platform to AWS with zero downtime — CDC pipeline, dual-system rollout, full legacy decommission
+- Designed an API gateway serving 500+ B2B clients at 2M+ API calls/day — without modifying a single legacy service
+- Built an event-driven architecture (SQS → EventBridge → consumers) that eliminated data loss under load and decoupled critical systems
+- Scaled engineering leadership across multiple teams on a top-5 financial mobile platform in Israel serving ~400K users
+
+## How I Lead
+
+I don't micromanage — I unblock.
+
+- **Architecture decisions early** — teams shouldn't hit walls mid-sprint. I make the hard calls before execution starts, not after.
+- **Tech tied to business impact** — I push back on work that doesn't move the needle, and fight hard for the work that does.
+- **Growing leaders, not just engineers** — I invest in Team Lead capacity because that's the only way to scale without degrading quality.
+
+## What I Care About
+
+Real-world systems, not toy projects. I'm drawn to environments where the complexity is real, the stakes are high, and the work actually ships. I care about building things that last — systems with integrity, teams with standards, and products that solve genuine problems.
 
 ---
 

@@ -3,6 +3,7 @@ import React from 'react';
 import Main from '../layouts/Main';
 import Personal from '../components/Stats/Personal';
 import Site from '../components/Stats/Site';
+import Architecture from '../components/Stats/Architecture';
 
 const Stats: React.FC = () => (
   <Main>
@@ -13,6 +14,7 @@ const Stats: React.FC = () => (
     <div className="grid sm:grid-cols-2 gap-6">
       <Personal />
       <Site />
+      <Architecture />
     </div>
   </Main>
 );

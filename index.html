@@ -26,6 +26,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Maxim Kozlov</title>
+    <!-- GitHub Pages SPA routing: restores path from 404.html redirect -->
+    <script>
+      (function () {
+        var p = window.location.search.slice(1).split('&').reduce(function (a, s) {
+          var r = s.split('=');
+          if (r[0] === 'p') a.path = r.slice(1).join('=').replace(/~and~/g, '&');
+          if (r[0] === 'q') a.query = r.slice(1).join('=').replace(/~and~/g, '&');
+          return a;
+        }, { path: '', query: '' });
+        if (p.path) {
+          window.history.replaceState(
+            null, null,
+            window.location.pathname.slice(0, -1) + p.path +
+            (p.query ? '?' + p.query : '') +
+            window.location.hash
+          );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

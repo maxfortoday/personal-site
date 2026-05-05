@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import dayjs from 'dayjs';
 
 import type { Project } from '../../types';
@@ -25,6 +25,53 @@ const CardImage: React.FC<{ image?: string; title: string }> = ({ image, title }
   </div>
 );
 
+const CaseStudy: React.FC<{ data: Project }> = ({ data }) => {
+  const [expanded, setExpanded] = useState(false);
+  if (!data.problem && !data.impact) return null;
+
+  return (
+    <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
+      <button
+        type="button"
+        onClick={(e) => { e.preventDefault(); setExpanded((p) => !p); }}
+        className="flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+      >
+        <svg
+          className={`w-3.5 h-3.5 transition-transform duration-200 ${expanded ? 'rotate-90' : ''}`}
+          fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+        {expanded ? 'Hide' : 'View'} case study
+      </button>
+
+      {expanded && (
+        <div className="mt-3 space-y-3">
+          {data.problem && (
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-1">Problem</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{data.problem}</p>
+            </div>
+          )}
+          {data.impact && (
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-1">Impact</p>
+              <ul className="space-y-1.5">
+                {data.impact.map((item, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-gray-600 dark:text-gray-300">
+                    <span className="text-green-500 dark:text-green-400 shrink-0 mt-0.5 font-bold">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const CardBody: React.FC<{ data: Project }> = ({ data }) => (
   <div className="p-4">
     <div className="flex items-start justify-between gap-2 mb-1">
@@ -40,6 +87,7 @@ const CardBody: React.FC<{ data: Project }> = ({ data }) => (
         View project <span aria-hidden="true">→</span>
       </span>
     )}
+    <CaseStudy data={data} />
   </div>
 );
 
