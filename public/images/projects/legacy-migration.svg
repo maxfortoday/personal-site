@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="dbOld" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="dbNew" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Grid lines subtle -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="450" stroke="#ffffff08" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="450" stroke="#ffffff08" stroke-width="1"/>
+
+  <!-- LEFT DB: Legacy -->
+  <ellipse cx="210" cy="165" rx="72" ry="20" fill="#64748b"/>
+  <rect x="138" y="165" width="144" height="90" fill="url(#dbOld)"/>
+  <ellipse cx="210" cy="215" rx="72" ry="20" fill="#64748b"/>
+  <ellipse cx="210" cy="255" rx="72" ry="20" fill="#475569"/>
+  <text x="210" y="202" font-family="ui-monospace,monospace" font-size="13" fill="#94a3b8" text-anchor="middle" font-weight="700" letter-spacing="1">LEGACY DB</text>
+  <text x="210" y="295" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">On-Prem SQL</text>
+
+  <!-- CDC Arrow -->
+  <line x1="294" y1="210" x2="488" y2="210" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="8 4"/>
+  <polygon points="488,203 506,210 488,217" fill="#22c55e"/>
+  <rect x="350" y="192" width="52" height="22" rx="11" fill="#052e16"/>
+  <text x="376" y="207" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#4ade80" text-anchor="middle" font-weight="700">CDC</text>
+
+  <!-- RIGHT DB: AWS Aurora -->
+  <ellipse cx="576" cy="165" rx="72" ry="20" fill="#fb923c"/>
+  <rect x="504" y="165" width="144" height="90" fill="url(#dbNew)"/>
+  <ellipse cx="576" cy="215" rx="72" ry="20" fill="#fb923c"/>
+  <ellipse cx="576" cy="255" rx="72" ry="20" fill="#ea580c"/>
+  <text x="576" y="202" font-family="ui-monospace,monospace" font-size="13" fill="#fed7aa" text-anchor="middle" font-weight="700">AWS Aurora</text>
+  <text x="576" y="295" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#9a3412" text-anchor="middle">Cloud RDS</text>
+
+  <!-- Zero downtime badge -->
+  <rect x="306" y="118" width="188" height="30" rx="15" fill="#14532d" opacity="0.9"/>
+  <circle cx="325" cy="133" r="5" fill="#4ade80"/>
+  <text x="396" y="138" font-family="ui-sans-serif,sans-serif" font-size="13" fill="#4ade80" text-anchor="middle" font-weight="600">Zero Downtime</text>
+
+  <!-- Bottom text -->
+  <text x="400" y="355" font-family="ui-sans-serif,sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="700">Legacy System Migration</text>
+  <text x="400" y="385" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#64748b" text-anchor="middle">AWS DMS · Feature Flags · Dual-Run · On-Prem → Cloud</text>
+</svg>
