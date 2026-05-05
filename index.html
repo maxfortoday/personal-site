@@ -26,9 +26,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>Maxim Kozlov</title>
-    <script type="module" crossorigin src="/personal-site/assets/index-BKkvMeQI.js"></script>
+    <!-- GitHub Pages SPA routing: restores path from 404.html redirect -->
+    <script>
+      (function () {
+        var p = window.location.search.slice(1).split('&').reduce(function (a, s) {
+          var r = s.split('=');
+          if (r[0] === 'p') a.path = r.slice(1).join('=').replace(/~and~/g, '&');
+          if (r[0] === 'q') a.query = r.slice(1).join('=').replace(/~and~/g, '&');
+          return a;
+        }, { path: '', query: '' });
+        if (p.path) {
+          window.history.replaceState(
+            null, null,
+            window.location.pathname.slice(0, -1) + p.path +
+            (p.query ? '?' + p.query : '') +
+            window.location.hash
+          );
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/personal-site/assets/index-BK5s7Gwo.js"></script>
     <link rel="modulepreload" crossorigin href="/personal-site/assets/jsx-runtime-iDO-CFVn.js">
-    <link rel="stylesheet" crossorigin href="/personal-site/assets/index-BDwANawr.css">
+    <link rel="stylesheet" crossorigin href="/personal-site/assets/index-MslY5ulI.css">
   </head>
   <body>
     <div id="root"></div>
