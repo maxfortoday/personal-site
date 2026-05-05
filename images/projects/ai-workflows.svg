@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#0c1445"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Circuit-like lines -->
+  <line x1="0" y1="100" x2="160" y2="100" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+  <line x1="160" y1="100" x2="160" y2="350" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+  <line x1="640" y1="100" x2="800" y2="100" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+  <line x1="640" y1="100" x2="640" y2="350" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+  <circle cx="160" cy="100" r="4" fill="#3b82f6"/>
+  <circle cx="640" cy="100" r="4" fill="#3b82f6"/>
+
+  <!-- Terminal window -->
+  <rect x="180" y="100" width="300" height="220" rx="10" fill="url(#terminal)" stroke="#1d4ed8" stroke-width="1.5"/>
+  <!-- Terminal header -->
+  <rect x="180" y="100" width="300" height="32" rx="10" fill="#1e293b"/>
+  <rect x="180" y="116" width="300" height="16" fill="#1e293b"/>
+  <circle cx="202" cy="116" r="6" fill="#ef4444"/>
+  <circle cx="222" cy="116" r="6" fill="#f59e0b"/>
+  <circle cx="242" cy="116" r="6" fill="#22c55e"/>
+  <text x="330" y="120" font-family="ui-monospace,monospace" font-size="11" fill="#64748b" text-anchor="middle">terminal</text>
+  <!-- Code lines -->
+  <text x="196" y="158" font-family="ui-monospace,monospace" font-size="11" fill="#4ade80">$ ai generate --context ctx.md</text>
+  <text x="196" y="176" font-family="ui-monospace,monospace" font-size="11" fill="#94a3b8">  ✦ Analyzing codebase...</text>
+  <text x="196" y="194" font-family="ui-monospace,monospace" font-size="11" fill="#94a3b8">  ✦ Generating solution...</text>
+  <text x="196" y="212" font-family="ui-monospace,monospace" font-size="11" fill="#22d3ee">  → patch applied (14 files)</text>
+  <text x="196" y="230" font-family="ui-monospace,monospace" font-size="11" fill="#22d3ee">  → tests passing ✓</text>
+  <text x="196" y="248" font-family="ui-monospace,monospace" font-size="11" fill="#22d3ee">  → PR ready for review</text>
+  <text x="196" y="270" font-family="ui-monospace,monospace" font-size="11" fill="#4ade80">$ <text fill="#a78bfa">_</text></text>
+
+  <!-- AI chip on right -->
+  <rect x="520" y="118" width="150" height="150" rx="16" fill="#0c1445" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Chip pins top -->
+  <rect x="545" y="108" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="567" y="108" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="589" y="108" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="611" y="108" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="633" y="108" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <!-- Chip pins bottom -->
+  <rect x="545" y="266" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="567" y="266" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="589" y="266" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="611" y="266" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <rect x="633" y="266" width="12" height="12" rx="2" fill="#1d4ed8"/>
+  <!-- Chip inner -->
+  <rect x="537" y="136" width="116" height="116" rx="8" fill="#0f172a" stroke="#1e40af" stroke-width="1"/>
+  <!-- Neural nodes -->
+  <circle cx="563" cy="162" r="8" fill="#3b82f6"/>
+  <circle cx="563" cy="194" r="8" fill="#3b82f6"/>
+  <circle cx="595" cy="178" r="10" fill="#6366f1"/>
+  <circle cx="627" cy="162" r="8" fill="#22d3ee"/>
+  <circle cx="627" cy="194" r="8" fill="#22d3ee"/>
+  <!-- Connections -->
+  <line x1="571" y1="162" x2="585" y2="178" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+  <line x1="571" y1="194" x2="585" y2="178" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+  <line x1="605" y1="178" x2="619" y2="162" stroke="#22d3ee" stroke-width="1.5" opacity="0.6"/>
+  <line x1="605" y1="178" x2="619" y2="194" stroke="#22d3ee" stroke-width="1.5" opacity="0.6"/>
+  <text x="595" y="234" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle" font-weight="700">AI</text>
+
+  <!-- Connecting arrow between terminal and chip -->
+  <line x1="480" y1="210" x2="518" y2="210" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6 3"/>
+  <polygon points="518,204 536,210 518,216" fill="#3b82f6"/>
+
+  <!-- Impact stats -->
+  <rect x="180" y="338" width="130" height="42" rx="8" fill="#0c1445" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="245" y="355" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Velocity</text>
+  <text x="245" y="373" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle" font-weight="700">↑ 3× faster</text>
+
+  <rect x="325" y="338" width="130" height="42" rx="8" fill="#0c1445" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="390" y="355" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Scope</text>
+  <text x="390" y="373" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle" font-weight="700">Org-wide</text>
+
+  <rect x="470" y="338" width="130" height="42" rx="8" fill="#0c1445" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="535" y="355" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#93c5fd" text-anchor="middle">Model</text>
+  <text x="535" y="373" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle" font-weight="700">Agent Loop</text>
+
+  <!-- Bottom text -->
+  <text x="400" y="415" font-family="ui-sans-serif,sans-serif" font-size="22" fill="white" text-anchor="middle" font-weight="700">AI Engineering Workflows</text>
+</svg>

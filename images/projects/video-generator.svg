@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <circle cx="120" cy="80" r="2" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="680" cy="60" r="2" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="740" cy="140" r="1.5" fill="#c4b5fd" opacity="0.5"/>
+  <circle cx="60" cy="170" r="1.5" fill="#c4b5fd" opacity="0.5"/>
+  <circle cx="710" cy="320" r="2" fill="#a78bfa" opacity="0.6"/>
+  <circle cx="90" cy="350" r="1.5" fill="#c4b5fd" opacity="0.5"/>
+
+  <!-- Sparkles -->
+  <g transform="translate(160,100)">
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#c4b5fd" stroke-width="1.5"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#c4b5fd" stroke-width="1.5"/>
+    <line x1="-7" y1="-7" x2="7" y2="7" stroke="#c4b5fd" stroke-width="1"/>
+    <line x1="7" y1="-7" x2="-7" y2="7" stroke="#c4b5fd" stroke-width="1"/>
+  </g>
+  <g transform="translate(640,100)" opacity="0.8">
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#c4b5fd" stroke-width="1.5"/>
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#c4b5fd" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(200,330)" opacity="0.7">
+    <line x1="0" y1="-7" x2="0" y2="7" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="-7" y1="0" x2="7" y2="0" stroke="#a78bfa" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(600,330)" opacity="0.7">
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="-7" y1="-7" x2="7" y2="7" stroke="#a78bfa" stroke-width="1"/>
+    <line x1="7" y1="-7" x2="-7" y2="7" stroke="#a78bfa" stroke-width="1"/>
+  </g>
+
+  <!-- Film frame -->
+  <rect x="270" y="110" width="260" height="190" rx="8" fill="url(#frame)" stroke="#7c3aed" stroke-width="2"/>
+  <!-- Film sprockets left -->
+  <rect x="270" y="125" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="270" y="153" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="270" y="181" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="270" y="209" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="270" y="237" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <!-- Film sprockets right -->
+  <rect x="512" y="125" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="512" y="153" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="512" y="181" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="512" y="209" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <rect x="512" y="237" width="18" height="14" rx="3" fill="#1e1b4b"/>
+  <!-- Screen area -->
+  <rect x="295" y="125" width="210" height="160" rx="4" fill="#13111c"/>
+  <!-- Play button -->
+  <circle cx="400" cy="205" r="40" fill="#7c3aed" opacity="0.9"/>
+  <polygon points="390,188 390,222 422,205" fill="white"/>
+  <!-- AI badge -->
+  <rect x="430" y="138" width="62" height="26" rx="13" fill="#4c1d95"/>
+  <text x="461" y="155" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle" font-weight="700">✦ AI</text>
+
+  <!-- Prompt input box below frame -->
+  <rect x="280" y="316" width="240" height="28" rx="6" fill="#1e1b4b" stroke="#6d28d9" stroke-width="1"/>
+  <text x="296" y="334" font-family="ui-monospace,monospace" font-size="11" fill="#7c3aed">▌</text>
+  <text x="308" y="334" font-family="ui-monospace,monospace" font-size="11" fill="#6d28d9">Generate video from text...</text>
+
+  <!-- Bottom text -->
+  <text x="400" y="378" font-family="ui-sans-serif,sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="700">AI Video Generator</text>
+  <text x="400" y="408" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#7c3aed" text-anchor="middle">Generative AI · Text-to-Video · Structured Output</text>
+</svg>
