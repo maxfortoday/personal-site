@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 import { tools, categories } from '../data/ai';
@@ -90,21 +89,6 @@ const ToolCard: React.FC<{ tool: AITool }> = ({ tool }) => {
             ))}
           </div>
 
-          {/* Project references */}
-          {tool.projects.length > 0 && (
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0">Used in:</span>
-              {tool.projects.map((p) => (
-                <Link
-                  key={p}
-                  to="/projects"
-                  className="text-xs font-medium text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  {p}
-                </Link>
-              ))}
-            </div>
-          )}
         </div>
       </div>
     </div>

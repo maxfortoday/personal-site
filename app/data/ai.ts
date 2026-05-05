@@ -223,7 +223,7 @@ export const tools: AITool[] = [
     category: 'AI Workflow & Productivity',
     tagline: "Google's AI for deep-diving into your own documents",
     description:
-      'NotebookLM treats uploaded documents as the entire knowledge base for a conversation — it only answers from what you give it, with zero hallucination from training data. Used for analyzing architecture documents, compliance specifications, post-mortem reports, and vendor proposals. The Audio Overview feature generates a two-host podcast-style discussion of any document set — surprisingly useful for absorbing dense technical material during commute.',
+      'NotebookLM treats uploaded documents as the entire knowledge base for a conversation — it gives grounded answers based on uploaded documents, not training data. Used for analyzing architecture documents, compliance specifications, post-mortem reports, and vendor proposals. The Audio Overview feature generates a two-host podcast-style discussion of any document set — surprisingly useful for absorbing dense technical material during commute.',
     usage: [
       'Architecture spec analysis: upload RFCs and ask "what are the open design decisions and their tradeoffs?"',
       'Compliance deep-dive: parse 200-page regulatory documents and extract engineering requirements',
@@ -234,7 +234,7 @@ export const tools: AITool[] = [
     projects: ['AI Engineering Workflows', 'Legacy System Migration'],
     link: 'https://notebooklm.google.com',
     badge: 'Daily Driver',
-    tags: ['Document Q&A', 'Zero hallucination', 'Compliance', 'Audio overview', 'Google'],
+    tags: ['Document Q&A', 'Grounded answers', 'Compliance', 'Audio overview', 'Google'],
   },
 ];
 

@@ -23,10 +23,6 @@ const data: Route[] = [
     label: 'About',
   },
   {
-    path: '/cover-letter',
-    label: 'Cover Letter',
-  },
-  {
     path: '/stats',
     label: 'Stats',
   },

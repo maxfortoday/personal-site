@@ -17,7 +17,7 @@ const Degree: React.FC<Props> = ({ data }) => (
       </p>
     </div>
     <span className="shrink-0 text-xs font-medium text-gray-400 dark:text-gray-500 bg-gray-50 dark:bg-gray-700 border border-gray-100 dark:border-gray-600 px-3 py-1 rounded-full self-start sm:self-center">
-      {data.year}
+      {data.yearStart ? `${data.yearStart} – ${data.year}` : data.year}
     </span>
   </div>
 );

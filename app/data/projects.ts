@@ -2,12 +2,12 @@ import type { Project } from '../types';
 
 const data: Project[] = [
   {
-    title: 'Legacy System Migration',
-    subtitle: 'Enterprise Platform Consolidation',
+    title: 'Nahal App Migration',
+    subtitle: 'Zero-Downtime Legacy Platform Migration',
     image: 'images/projects/legacy-migration.svg',
     date: '2023-01-01',
     featured: true,
-    desc: 'Led zero-downtime migration of a live legacy application into the core enterprise platform — CDC pipeline, dual-system rollout, and full decommission without a single incident.',
+    desc: 'Led zero-downtime migration of the Nahal live application into the core enterprise platform — CDC pipeline, dual-system rollout, and full decommission without a single incident.',
     problem: 'A critical business application ran on an aging on-prem SQL server with no cloud path, tightly coupled to the legacy stack. Any downtime would halt operations for thousands of users.',
     impact: [
       'Zero downtime — live traffic migrated using AWS DMS CDC, dual systems ran in parallel until cutover',
@@ -17,18 +17,48 @@ const data: Project[] = [
     ],
   },
   {
-    title: 'Enterprise API Gateway',
-    subtitle: 'Authentication & Unified Access Layer',
+    title: 'Secure API & Auth Layer',
+    subtitle: 'Unified Authentication & Access Control',
     image: 'images/projects/api-gateway.svg',
     date: '2023-06-01',
     featured: true,
-    desc: 'Designed a secure API gateway layer in front of multiple legacy systems (REST/SOAP/XML), enabling unified Auth0 token-based authentication for 500+ B2B clients at ~2M API calls/day.',
-    problem: '500+ B2B clients were authenticating directly against legacy systems with inconsistent auth schemes. There was no unified access control, no audit trail, and no way to enforce rate limits without touching each underlying service.',
+    desc: 'Designed a secure API layer in front of multiple legacy systems (REST/SOAP/XML), enabling unified Auth0 token-based authentication for 500+ B2B clients at ~2M API calls/day.',
+    problem: '500+ B2B clients were authenticating directly against legacy systems with inconsistent auth schemes. No unified access control, no audit trail, and no way to enforce rate limits without touching each underlying service.',
     impact: [
       'Unified auth across all legacy systems — single Auth0 token flow, no changes to underlying services',
       '2M+ API calls/day handled with rate limiting, request routing, and full audit logging',
       'Reduced B2B onboarding time from weeks to hours via self-service token provisioning',
-      'Security posture: eliminated direct legacy system exposure from the public internet',
+      'Eliminated direct legacy system exposure from the public internet',
+    ],
+  },
+  {
+    title: 'Observability Platform',
+    subtitle: 'Monitoring, Alerting & Incident Readiness',
+    image: 'images/projects/observability.svg',
+    date: '2024-06-01',
+    featured: true,
+    desc: 'Built a centralised observability platform across distributed cloud systems — structured logging pipelines, real-time alerting, and incident runbooks — turning reactive firefighting into proactive reliability.',
+    problem: 'Teams had no centralised visibility into production systems. Incidents were discovered by users, not engineers. No alerting standards, no runbooks, no shared dashboards — every team operated blind.',
+    impact: [
+      'Reduced MTTR by ~60% — incidents now detected and triaged before users report them',
+      'Centralised CloudWatch dashboards + structured log pipelines across all services',
+      'Org-wide alerting standards and runbooks adopted across 3 engineering teams',
+      'Shifted incident culture from reactive to proactive: on-call engineers have context before they pick up',
+    ],
+  },
+  {
+    title: 'TzunAI',
+    subtitle: 'AI-Powered Nutrition Tracker',
+    image: 'images/projects/tzunai.svg',
+    date: '2024-06-01',
+    featured: true,
+    desc: 'Hebrew-first mobile app that uses GPT-4o Vision to analyze food photos, returning structured calorie and macro data with a feedback loop for accuracy improvement.',
+    problem: 'Existing nutrition apps require manual food entry — slow, inaccurate, and abandoned within days. The goal was a photo-first experience that could handle Israeli cuisine with Hebrew-language output.',
+    impact: [
+      'GPT-4o Vision → structured JSON nutrition breakdown in <2s p95 latency',
+      'Meal reuse heuristic reduces API calls by ~40% by detecting duplicate meals',
+      'User feedback loop: corrections feed back into prompt context, improving accuracy over time',
+      'Hebrew-first: native language output with locale-aware formatting',
     ],
   },
   {
@@ -36,7 +66,6 @@ const data: Project[] = [
     subtitle: 'Cloud Architecture & Decoupling',
     image: 'images/projects/event-pipeline.svg',
     date: '2024-01-01',
-    featured: true,
     desc: 'Designed and led adoption of an event-driven architecture (API Gateway → SQS → EventBridge → consumers) to decouple critical systems and eliminate data loss under load.',
     problem: 'Critical downstream systems were coupled via synchronous API calls. Under high load, failures cascaded — a slow consumer blocked the producer, and dropped events meant lost data with no recovery path.',
     impact: [
@@ -61,20 +90,6 @@ const data: Project[] = [
     ],
   },
   {
-    title: 'TzunAI',
-    subtitle: 'AI-Powered Nutrition Tracker',
-    image: 'images/projects/tzunai.svg',
-    date: '2024-06-01',
-    desc: 'Hebrew-first mobile app that uses GPT-4o Vision to analyze food photos, returning structured calorie and macro data with a feedback loop for accuracy improvement.',
-    problem: 'Existing nutrition apps require manual food entry — slow, inaccurate, and abandoned within days. The goal was a photo-first experience that could handle Israeli cuisine with Hebrew-language output.',
-    impact: [
-      'GPT-4o Vision → structured JSON nutrition breakdown in <2s p95 latency',
-      'Meal reuse heuristic reduces API calls by ~40% by detecting duplicate meals',
-      'User feedback loop: corrections feed back into prompt context, improving accuracy over time',
-      'Hebrew-first: native language output with locale-aware formatting',
-    ],
-  },
-  {
     title: 'AI Engineering Workflows',
     subtitle: 'Developer Productivity Initiative',
     image: 'images/projects/ai-workflows.svg',
@@ -85,7 +100,7 @@ const data: Project[] = [
       'Agentic code review pipeline: diff + full file context → severity-ranked findings table',
       'Architecture planning: RFC → structured ADR with tradeoff analysis in one prompt chain',
       'Codebase migrations executed in single sessions (Webpack 4 → Vite 8, React 16 → 19)',
-      'Measurable delivery velocity improvement across 3 engineering teams',
+      'Improved delivery velocity across multiple engineering workflows',
     ],
   },
 ];

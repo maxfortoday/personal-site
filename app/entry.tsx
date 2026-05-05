@@ -9,7 +9,6 @@ import './static/css/main.css';
 const About       = React.lazy(() => import('./views/About'));
 const AI          = React.lazy(() => import('./views/AI'));
 const Contact     = React.lazy(() => import('./views/Contact'));
-const CoverLetter = React.lazy(() => import('./views/CoverLetter'));
 const Index       = React.lazy(() => import('./views/Index'));
 const NotFound    = React.lazy(() => import('./views/NotFound'));
 const Projects    = React.lazy(() => import('./views/Projects'));
@@ -31,7 +30,6 @@ createRoot(root).render(
             <Route path="/projects"    element={<Projects />} />
             <Route path="/ai"          element={<AI />} />
             <Route path="/contact"     element={<Contact />} />
-            <Route path="/cover-letter" element={<CoverLetter />} />
             <Route path="/stats"       element={<Stats />} />
             <Route path="*"            element={<NotFound />} />
           </Routes>

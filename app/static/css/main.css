@@ -8,6 +8,31 @@
   --color-brand: #2563eb;
 }
 
+/* Accessible focus rings for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip-to-content link: hidden until focused */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: top 0.1s;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
 @media print {
   /* Hide chrome, show only resume content */
   header, aside, nav, .no-print { display: none !important; }

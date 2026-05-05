@@ -2,49 +2,40 @@ import type { Skill, Category } from '../../types';
 
 const skills: Skill[] = [
   // Systems & Architecture
-  { title: 'Distributed Systems', competency: 5, category: ['Systems & Architecture'] },
-  { title: 'Event-Driven Architecture', competency: 5, category: ['Systems & Architecture'] },
-  { title: 'API Gateway Design', competency: 5, category: ['Systems & Architecture'] },
-  { title: 'Cloud Architecture (AWS)', competency: 5, category: ['Systems & Architecture'] },
-  { title: 'Zero-Downtime Migrations', competency: 5, category: ['Systems & Architecture'] },
-  { title: 'Observability & Monitoring', competency: 5, category: ['Systems & Architecture'] },
-  { title: 'Security & Identity (Auth0, IAM)', competency: 4, category: ['Systems & Architecture'] },
+  { title: 'Distributed systems', competency: 5, category: ['Systems & Architecture'] },
+  { title: 'API design', competency: 5, category: ['Systems & Architecture'] },
+  { title: 'Integration patterns', competency: 5, category: ['Systems & Architecture'] },
+  { title: 'Event-driven architecture', competency: 5, category: ['Systems & Architecture'] },
 
-  // Backend & Infrastructure
-  { title: 'Node.js / TypeScript', competency: 5, category: ['Backend & Infrastructure'] },
-  { title: 'AWS (Lambda, SQS, RDS, DMS, AppSync)', competency: 5, category: ['Backend & Infrastructure'] },
-  { title: 'REST & GraphQL APIs', competency: 5, category: ['Backend & Infrastructure'] },
-  { title: 'SQL / Aurora', competency: 5, category: ['Backend & Infrastructure'] },
-  { title: 'CI/CD Pipelines', competency: 5, category: ['Backend & Infrastructure'] },
-  { title: 'React / React Native', competency: 5, category: ['Backend & Infrastructure'] },
-  { title: 'Firebase / MongoDB', competency: 4, category: ['Backend & Infrastructure'] },
-  { title: 'Azure DevOps', competency: 4, category: ['Backend & Infrastructure'] },
+  // Cloud & Platform
+  { title: 'AWS', competency: 5, category: ['Cloud & Platform'] },
+  { title: 'API Gateway', competency: 5, category: ['Cloud & Platform'] },
+  { title: 'IAM', competency: 5, category: ['Cloud & Platform'] },
+  { title: 'SQS', competency: 5, category: ['Cloud & Platform'] },
+  { title: 'EventBridge', competency: 5, category: ['Cloud & Platform'] },
+  { title: 'Secrets Manager', competency: 5, category: ['Cloud & Platform'] },
+  { title: 'Observability', competency: 5, category: ['Cloud & Platform'] },
 
-  // AI & Modern Dev
-  { title: 'LLM Integration', competency: 5, category: ['AI & Modern Dev'] },
-  { title: 'Structured Output Pipelines', competency: 5, category: ['AI & Modern Dev'] },
-  { title: 'Agent Workflows', competency: 5, category: ['AI & Modern Dev'] },
-  { title: 'AI-Assisted Engineering', competency: 5, category: ['AI & Modern Dev'] },
-  { title: 'Prompt Engineering', competency: 4, category: ['AI & Modern Dev'] },
-  { title: 'Generative AI (Video, Voice)', competency: 4, category: ['AI & Modern Dev'] },
+  // Engineering Leadership
+  { title: 'Team leadership', competency: 5, category: ['Engineering Leadership'] },
+  { title: 'Code standards', competency: 5, category: ['Engineering Leadership'] },
+  { title: 'Delivery ownership', competency: 5, category: ['Engineering Leadership'] },
+  { title: 'Cross-team execution', competency: 5, category: ['Engineering Leadership'] },
 
-  // Leadership
-  { title: 'Engineering Management', competency: 5, category: ['Leadership'] },
-  { title: 'Multi-Team Leadership', competency: 5, category: ['Leadership'] },
-  { title: 'Delivery Ownership', competency: 5, category: ['Leadership'] },
-  { title: 'Stakeholder Management', competency: 5, category: ['Leadership'] },
-  { title: 'Organizational Scaling', competency: 5, category: ['Leadership'] },
-  { title: 'Technical Roadmapping', competency: 5, category: ['Leadership'] },
+  // AI & Modern Development
+  { title: 'OpenAI', competency: 5, category: ['AI & Modern Development'] },
+  { title: 'Claude', competency: 5, category: ['AI & Modern Development'] },
+  { title: 'Gemini', competency: 5, category: ['AI & Modern Development'] },
+  { title: 'Cursor', competency: 5, category: ['AI & Modern Development'] },
+  { title: 'LLM workflows', competency: 5, category: ['AI & Modern Development'] },
+  { title: 'Structured AI outputs', competency: 5, category: ['AI & Modern Development'] },
 ].map((skill) => ({ ...skill, category: [...skill.category].sort() }));
 
-const colors: Record<string, string> = {
-  'Systems & Architecture': '#3b82f6',
-  'Backend & Infrastructure': '#8b5cf6',
-  'AI & Modern Dev': '#10b981',
-  'Leadership': '#f59e0b',
-};
-
-const categories: Category[] = ['Systems & Architecture', 'Backend & Infrastructure', 'AI & Modern Dev', 'Leadership']
-  .map((name) => ({ name, color: colors[name] ?? '#6968b3' }));
+const categories: Category[] = [
+  { name: 'Systems & Architecture', color: '#3b82f6' },
+  { name: 'Cloud & Platform',       color: '#8b5cf6' },
+  { name: 'Engineering Leadership', color: '#f59e0b' },
+  { name: 'AI & Modern Development', color: '#10b981' },
+];
 
 export { categories, skills };

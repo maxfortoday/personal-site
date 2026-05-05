@@ -18,10 +18,10 @@ const Index: React.FC = () => (
           Engineering Leader
         </p>
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
-          Building scalable systems<br className="hidden sm:block" /> & AI-driven products
+          Building scalable systems, AI-driven workflows, and production-grade platforms
         </h1>
         <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400 leading-relaxed mb-8 max-w-2xl">
-          9+ years leading backend, infrastructure, and production systems at scale — from legacy migrations with zero downtime to AI-powered platforms.
+          9+ years of hands-on engineering leadership across cloud platforms, backend systems, and AI-enabled workflows — building for production reliability at scale.
         </p>
 
         {/* Impact metrics */}
@@ -90,7 +90,7 @@ const Index: React.FC = () => (
             View all →
           </Link>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           {featured.map((project) => (
             <Cell key={project.title} data={project} />
           ))}

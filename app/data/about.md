@@ -1,32 +1,28 @@
 
-I'm an Engineering Leader with 9+ years building systems that operate at scale — from migrating live enterprise platforms with zero downtime to shipping AI-powered products used by hundreds of thousands of users.
+Engineering leader with 9+ years building and operating systems that handle real load — cloud-native platforms, production backend systems, and AI-enabled workflows. I care about reliability, delivery, and the gap between what gets designed and what actually ships.
 
 ## What I Do
 
-**Systems at Scale** — I design and own production architectures that handle real load: event-driven pipelines, API gateways serving millions of requests per day, and distributed systems across complex network and organizational boundaries.
+**Cloud & Backend Systems** — I design and own production architectures across distributed systems: API layers, event-driven pipelines, cloud infrastructure, and the observability that keeps them honest.
 
-**Infrastructure + Product** — I operate at the intersection of platform engineering and product delivery. I care about reliability, observability, and the operational reality of what actually gets shipped to users.
+**Hands-On Leadership** — I lead engineering teams directly — setting standards, unblocking delivery, making architecture decisions early, and developing Team Leads who can do the same.
 
-**AI in Production** — I build AI-powered systems that go beyond demos: LLMs with structured outputs, feedback loops for accuracy improvement, and agent workflows that create real delivery leverage — not just interesting experiments.
+**AI in Production** — I build AI-powered systems that go beyond demos: LLM pipelines with structured outputs, feedback loops for accuracy, and agent workflows wired into real delivery processes.
 
 ## What I've Built
 
-- Migrated a live enterprise platform to AWS with zero downtime — CDC pipeline, dual-system rollout, full legacy decommission
-- Designed an API gateway serving 500+ B2B clients at 2M+ API calls/day — without modifying a single legacy service
-- Built an event-driven architecture (SQS → EventBridge → consumers) that eliminated data loss under load and decoupled critical systems
-- Scaled engineering leadership across multiple teams on a top-5 financial mobile platform in Israel serving ~400K users
+- **Nahal App Migration** — migrated a live enterprise platform to AWS with zero downtime: CDC pipeline, dual-system rollout, full legacy decommission
+- **Secure API & Auth Layer** — unified auth for 500+ B2B clients at 2M+ API calls/day, without modifying a single legacy service
+- **Observability Platform** — centralised monitoring, alerting, and runbooks across distributed systems, reducing MTTR by ~60%
+- **TzunAI** — food photo → structured nutrition breakdown in under 2 seconds, Hebrew-first, with a feedback loop for accuracy improvement
 
 ## How I Lead
 
 I don't micromanage — I unblock.
 
-- **Architecture decisions early** — teams shouldn't hit walls mid-sprint. I make the hard calls before execution starts, not after.
-- **Tech tied to business impact** — I push back on work that doesn't move the needle, and fight hard for the work that does.
-- **Growing leaders, not just engineers** — I invest in Team Lead capacity because that's the only way to scale without degrading quality.
-
-## What I Care About
-
-Real-world systems, not toy projects. I'm drawn to environments where the complexity is real, the stakes are high, and the work actually ships. I care about building things that last — systems with integrity, teams with standards, and products that solve genuine problems.
+- **Architecture decisions early** — teams shouldn't hit walls mid-sprint. I make the hard calls before execution starts.
+- **Tech tied to business impact** — I push back on work that doesn't move the needle, and fight for the work that does.
+- **Growing leaders, not just engineers** — I invest in Team Lead capacity because that's the only way to scale without losing quality.
 
 ---
 

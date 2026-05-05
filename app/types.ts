@@ -25,6 +25,7 @@ export interface Degree {
   degree: string;
   link?: string;
   year: number;
+  yearStart?: number;
 }
 
 export interface Skill {
