@@ -1,82 +1,82 @@
-# [My Site](https://maxfortoday.github.io/personal-site/)
+# [maxfortoday.github.io/personal-site](https://maxfortoday.github.io/personal-site/)
 
-My personal website. Easily modifiable, and built using modern javascript with Node.js, React, Express, React-Router, Hot Module Reloading, Webpack and many other technologies.
+Personal site for Maxim Kozlov — Engineering Leader. Built with React 19, Vite 8, and Tailwind CSS v4. Deployed to GitHub Pages.
 
-## A note on adapting this repository to your own personal website
+## Stack
 
-Many people have contacted me about adapting this website. I have tried to make things as simple as possible. There are still bugs. I am sorry. If you find a bug, please email me (admtrigger@gmail.com) or submit an issue or a pull request.
+| Layer | Technology |
+|-------|-----------|
+| UI | React 19 + TypeScript |
+| Build | Vite 8 (esbuild) |
+| Styling | Tailwind CSS v4 (CSS-first config) |
+| Routing | React Router v7 |
+| Markdown | react-markdown + rehype-raw |
+| Deploy | gh-pages → GitHub Pages |
 
-## Dependencies
+**Performance:** 15 code-split chunks via `React.lazy()`, 184 KB initial JS load.
 
-Tested with:
+## Project structure
 
-* node >= v8, v9, v10, v11, v12
-* Recommend [nvm](https://github.com/creationix/nvm#installation) for managing node versions
+```
+app/
+├── components/
+│   ├── Projects/       # Cell (project card with case study expander)
+│   ├── Resume/         # Experience, Education, Skills, Courses, References
+│   │   └── Skills/     # SkillBar, CategoryButton
+│   ├── Stats/          # Personal, Site (GitHub), Architecture
+│   └── Template/       # Header, Nav, Footer, Hamburger, Analytics, ScrollToTop
+├── context/
+│   └── DarkMode.tsx    # Class-based dark mode, localStorage + system preference
+├── data/
+│   ├── about.md        # About page content (Markdown)
+│   ├── ai.ts           # AI tools list
+│   ├── contact.ts      # Social links
+│   ├── projects.ts     # Project case studies
+│   ├── routes.ts       # Navigation routes
+│   └── resume/
+│       ├── courses.ts
+│       ├── degrees.ts
+│       ├── positions.ts
+│       └── skills.ts
+├── layouts/
+│   └── Main.tsx        # Root layout: sidebar nav + header + footer
+├── static/
+│   └── css/main.css    # Tailwind v4 entry, dark mode variant, print CSS
+├── types.ts
+├── views/              # One file per route (lazy-loaded)
+└── entry.tsx           # App entry, React.lazy() route config
+public/
+├── images/
+│   ├── projects/       # SVG cover images for each project
+│   └── favicon/
+├── 404.html            # GitHub Pages SPA routing redirect
+└── CNAME
+```
 
-## Set up
+## Local development
 
-You may wish to fork this repository or remove my remote origin and add your own. Go [here](https://help.github.com/articles/changing-a-remote-s-url/) for more information on changing remotes.  
+```bash
+npm install
+npm run dev
+# → http://localhost:5173/personal-site/
+```
 
-1. To download the repository and install dependencies, run the following commands:
+## Customization
 
-    ```bash
-    git clone https://github.com/maxfortoday/personal-site.git
-    cd personal-site
-    npm install
-    ```
+1. **Personal info** — edit `app/data/about.md`, `app/data/contact.ts`, and `app/components/Template/Nav.tsx`
+2. **Experience & skills** — edit files under `app/data/resume/`
+3. **Projects** — edit `app/data/projects.ts`. Each project supports `problem` and `impact` fields that render as an expandable case study
+4. **AI stack** — edit `app/data/ai.ts`
+5. **Profile image** — replace `public/images/me_icon.jpg`
+6. **Site metadata** — update `index.html` (OG tags, description) and `package.json` (`homepage`)
+7. **Routes** — add a new view in `app/views/`, register it in `app/entry.tsx` and `app/data/routes.ts`
 
-    If you do not have `yarn` installed, you may run `npm install` instead.
+## Deploy
 
-2. Next, you should create a `.env` file. To do this, run:
+```bash
+npm run deploy
+```
 
-    ```bash
-    cp sample.env .env
-    ```
+Builds the site and pushes `dist/` to the `gh-pages` branch. GitHub Pages serves it from there. First-time setup: go to repo Settings → Pages → Source → `gh-pages` branch.
 
-    and set values as appropriate. Most people will not need to make changes.
-
-3. Run the following command to build the react application and serve it with hot module reloading:
-
-    ```bash
-    npm run dev
-    ```
-
-    Navigate to `<ip>:<port>` default: [http://localhost:7999](http://localhost:7999) to view my website.
-
-    This completes set up instructions. Please continue reading to learn how to modify this site to make it your own.
-
-## Checklist
-
-1. Start by changing text in the sidebar. This file is located at `app/components/Template/Nav.js`.
-2. Add an image of yourself in `public/images/me_icon.jpg`. If you decide to change the filename, be sure to go back to the sidebar and change the image path there as well.
-3. Modify the text in `app/views/Index.js`
-4. Modify the files in `app/data/resume/` next. When you're finished, go back and modify all of the other files in the `app/data/` directory.
-5. You've finished modifying >95% of the pages. Search through the rest of the files for references to `Michael` or `Angelo` and change values to your name.
-6. Change the description in `server/views/index.tpl.html`. You may also wish to add a new favicon or remove it. [This](https://realfavicongenerator.net/) website may be helpful.
-7. Decide how and where you are going to host this project. I recommend purchasing your own domain name from [Google Domains](https://domains.google). If you would like to host on github pages, run `npm run deploy`. This will generate a new branch called `gh-pages`. Then go to `https://github.com/[your github username]/personal-site/settings` and configure accordingly:
-
-    ![github hosting instructions](docs/gh-pages.png)
-
-8. Configure your domains DNS record. See [here]( https://help.github.com/articles/using-a-custom-domain-with-github-pages/) for more information.
-9. Change `homepage` in `package.json` to reflect where you plan to host the site. This is important for react-snap. If using a custom url, modify the [CNAME](/public/CNAME) file to point to your URL. If you plan to deploy to a /[path]
-(e.g. [https://maxfortoday.github.io/personal-site/](https://maxfortoday.github.io/personal-site/)), you should modify `BASE_PATH` in your `.env` and `sample.env` files and restart the express server. Note that you will now have to navigate to `localhost:[port]/[BASE_PATH]` when developing.
-
-## Deploying to Github Pages
-
-1. Change `NODE_ENV` to `production` in `.env`
-2. Run `npm run deploy`
-
-That's it.
-
-Please feel free to reach out to me by filing an issue for help configuring your project.
-
-## Contributors
-
-* [@mldangelo](https://github.com/mldangelo)
-* [@typpo](https://github.com/typpo)
-* [@notrueblood](https://github.com/notrueblood)
-
-## Acknowledgements
-
-* Special thanks to [@typpo](https://github.com/typpo) for tirelessly answering all of my node.js and react questions.
-* Template based on [Future Imperfect](https://html5up.net/future-imperfect) by [@ajlkn](https://github.com/ajlkn) for [HTML5 UP](html5up.net).
+For subsequent deploys, commit your changes then run `npm run deploy`.
