@@ -1,0 +1,74 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Metric cards -->
+  <rect x="90" y="60" width="175" height="75" rx="8" fill="#1e293b" stroke="#14b8a6" stroke-width="1" opacity="0.9"/>
+  <text x="177" y="90" text-anchor="middle" fill="#14b8a6" font-size="10" font-family="monospace" letter-spacing="1">MTTR</text>
+  <text x="177" y="118" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold" font-family="monospace">↓ 60%</text>
+
+  <rect x="312" y="60" width="175" height="75" rx="8" fill="#1e293b" stroke="#14b8a6" stroke-width="1" opacity="0.9"/>
+  <text x="400" y="90" text-anchor="middle" fill="#14b8a6" font-size="10" font-family="monospace" letter-spacing="1">COVERAGE</text>
+  <text x="400" y="118" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold" font-family="monospace">100%</text>
+
+  <rect x="535" y="60" width="175" height="75" rx="8" fill="#1e293b" stroke="#14b8a6" stroke-width="1" opacity="0.9"/>
+  <text x="622" y="90" text-anchor="middle" fill="#14b8a6" font-size="10" font-family="monospace" letter-spacing="1">INCIDENTS</text>
+  <text x="622" y="118" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold" font-family="monospace">Proactive</text>
+
+  <!-- Chart area -->
+  <rect x="90" y="160" width="400" height="200" rx="8" fill="#1e293b" opacity="0.85"/>
+  <text x="107" y="183" fill="#64748b" font-size="10" font-family="monospace" letter-spacing="0.5">SYSTEM HEALTH</text>
+
+  <!-- Grid lines -->
+  <line x1="110" y1="200" x2="470" y2="200" stroke="#1e3a4a" stroke-width="1"/>
+  <line x1="110" y1="230" x2="470" y2="230" stroke="#1e3a4a" stroke-width="1"/>
+  <line x1="110" y1="260" x2="470" y2="260" stroke="#1e3a4a" stroke-width="1"/>
+  <line x1="110" y1="290" x2="470" y2="290" stroke="#1e3a4a" stroke-width="1"/>
+  <line x1="110" y1="320" x2="470" y2="320" stroke="#1e3a4a" stroke-width="1"/>
+  <line x1="110" y1="345" x2="470" y2="345" stroke="#334155" stroke-width="1"/>
+
+  <!-- Area fill -->
+  <polygon points="110,320 155,310 200,295 250,280 300,270 350,255 395,245 445,230 470,225 470,345 110,345" fill="#14b8a6" opacity="0.08"/>
+
+  <!-- Line -->
+  <polyline points="110,320 155,310 200,295 250,280 300,270 350,255 395,245 445,230 470,225"
+    fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Data points -->
+  <circle cx="110" cy="320" r="3.5" fill="#14b8a6"/>
+  <circle cx="200" cy="295" r="3.5" fill="#14b8a6"/>
+  <circle cx="300" cy="270" r="3.5" fill="#14b8a6"/>
+  <circle cx="395" cy="245" r="3.5" fill="#14b8a6"/>
+  <circle cx="470" cy="225" r="5" fill="#14b8a6" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- Alert log -->
+  <rect x="510" y="160" width="200" height="200" rx="8" fill="#1e293b" opacity="0.85"/>
+  <text x="527" y="183" fill="#64748b" font-size="10" font-family="monospace" letter-spacing="0.5">ALERT LOG</text>
+
+  <circle cx="527" cy="207" r="4" fill="#22c55e"/>
+  <text x="539" y="211" fill="#94a3b8" font-size="10" font-family="monospace">API p99 — OK</text>
+
+  <circle cx="527" cy="230" r="4" fill="#22c55e"/>
+  <text x="539" y="234" fill="#94a3b8" font-size="10" font-family="monospace">DB pool — OK</text>
+
+  <circle cx="527" cy="253" r="4" fill="#f59e0b"/>
+  <text x="539" y="257" fill="#94a3b8" font-size="10" font-family="monospace">SQS depth spike</text>
+
+  <circle cx="527" cy="276" r="4" fill="#22c55e"/>
+  <text x="539" y="280" fill="#94a3b8" font-size="10" font-family="monospace">Lambda — warm</text>
+
+  <circle cx="527" cy="299" r="4" fill="#22c55e"/>
+  <text x="539" y="303" fill="#94a3b8" font-size="10" font-family="monospace">Error rate 0.01%</text>
+
+  <circle cx="527" cy="322" r="4" fill="#22c55e"/>
+  <text x="539" y="326" fill="#94a3b8" font-size="10" font-family="monospace">Memory stable</text>
+
+  <!-- Label -->
+  <text x="400" y="405" text-anchor="middle" fill="#1e3a4a" font-size="11" font-family="monospace" letter-spacing="2">OBSERVABILITY PLATFORM</text>
+</svg>
