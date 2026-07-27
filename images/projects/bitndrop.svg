@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Subtle rings -->
+  <circle cx="400" cy="205" r="180" fill="none" stroke="#ffffff08" stroke-width="1"/>
+  <circle cx="400" cy="205" r="140" fill="none" stroke="#ffffff08" stroke-width="1"/>
+
+  <!-- Phone outline -->
+  <rect x="310" y="95" width="180" height="320" rx="20" fill="#100c2e" stroke="#a78bfa" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="322" y="115" width="156" height="260" rx="8" fill="url(#screen)"/>
+  <!-- Notch -->
+  <rect x="368" y="108" width="64" height="12" rx="6" fill="#100c2e"/>
+
+  <!-- App header -->
+  <rect x="322" y="115" width="156" height="40" rx="8" fill="#4c1d95"/>
+  <text x="400" y="140" font-family="ui-sans-serif,sans-serif" font-size="15" fill="#c4b5fd" text-anchor="middle" font-weight="800">bitndrop</text>
+
+  <!-- Now playing / waveform -->
+  <rect x="334" y="165" width="132" height="52" rx="8" fill="#2e1065"/>
+  <text x="348" y="185" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#a78bfa">▶ 0:30 preview</text>
+  <g fill="#8b5cf6">
+    <rect x="348" y="196" width="4" height="14" rx="2"/>
+    <rect x="356" y="192" width="4" height="18" rx="2"/>
+    <rect x="364" y="199" width="4" height="11" rx="2"/>
+    <rect x="372" y="189" width="4" height="21" rx="2"/>
+    <rect x="380" y="196" width="4" height="14" rx="2"/>
+    <rect x="388" y="200" width="4" height="10" rx="2"/>
+    <rect x="396" y="193" width="4" height="17" rx="2"/>
+    <rect x="404" y="197" width="4" height="13" rx="2"/>
+    <rect x="412" y="190" width="4" height="20" rx="2"/>
+    <rect x="420" y="198" width="4" height="12" rx="2"/>
+    <rect x="428" y="194" width="4" height="16" rx="2"/>
+    <rect x="436" y="200" width="4" height="10" rx="2"/>
+    <rect x="444" y="192" width="4" height="18" rx="2"/>
+    <rect x="452" y="197" width="4" height="13" rx="2"/>
+  </g>
+
+  <!-- Answer options -->
+  <rect x="334" y="227" width="132" height="26" rx="6" fill="#5b21b6"/>
+  <text x="400" y="244" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#ede9fe" text-anchor="middle">Which track is this?</text>
+  <rect x="334" y="259" width="63" height="24" rx="6" fill="#312e81"/>
+  <rect x="403" y="259" width="63" height="24" rx="6" fill="#16a34a"/>
+  <rect x="334" y="289" width="63" height="24" rx="6" fill="#312e81"/>
+  <rect x="403" y="289" width="63" height="24" rx="6" fill="#312e81"/>
+
+  <!-- Score bar -->
+  <rect x="334" y="323" width="132" height="34" rx="8" fill="#2e1065"/>
+  <text x="348" y="344" font-family="ui-monospace,monospace" font-size="11" fill="#c4b5fd">7 / 10  🔥 4</text>
+
+  <!-- Badges right side -->
+  <rect x="520" y="135" width="120" height="36" rx="10" fill="#2e1065" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="580" y="150" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Turborepo</text>
+  <text x="580" y="165" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="700">Monorepo</text>
+
+  <rect x="520" y="185" width="120" height="36" rx="10" fill="#2e1065" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="580" y="200" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Expo + RN</text>
+  <text x="580" y="215" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="700">+ Firebase</text>
+
+  <rect x="520" y="235" width="120" height="36" rx="10" fill="#2e1065" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="580" y="250" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Deezer Previews</text>
+  <text x="580" y="265" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="700">5 Game Modes</text>
+
+  <rect x="520" y="285" width="120" height="36" rx="10" fill="#2e1065" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="580" y="300" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#c4b5fd" text-anchor="middle">Live · v1.0.4</text>
+  <text x="580" y="315" font-family="ui-sans-serif,sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="700">iOS · Android</text>
+
+  <!-- Bottom text -->
+  <text x="400" y="388" font-family="ui-sans-serif,sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="700">bitndrop</text>
+  <text x="400" y="415" font-family="ui-sans-serif,sans-serif" font-size="14" fill="#a78bfa" text-anchor="middle">Music Quiz Game · React Native · Firebase · Monorepo</text>
+</svg>
