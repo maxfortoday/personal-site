@@ -2,6 +2,44 @@ import type { Project } from '../types';
 
 const data: Project[] = [
   {
+    title: 'bitndrop',
+    subtitle: 'Music Quiz Game · Live on iOS & Android',
+    image: 'images/projects/bitndrop.svg',
+    date: '2025-10-01',
+    featured: true,
+    stores: [
+      { label: 'App Store', link: 'https://apps.apple.com/app/id6767649360' },
+      { label: 'Google Play', link: 'https://play.google.com/store/apps/details?id=com.maxkozlov.bitndrop' },
+    ],
+    desc: 'A music quiz game that plays 30-second track previews and asks you to name the song from four options. Genre and artist quizzes, a shared daily challenge with streaks, shuffle, and async friend duels. Built as a pnpm + Turborepo monorepo and shipped to both stores.',
+    problem: 'I wanted to ship a real, polished consumer product end-to-end — not a prototype — with a shared codebase that could spawn a second white-label app (Hebrew edition) without duplicating logic, all while keeping every already-shipped version working as the schema evolved.',
+    impact: [
+      'Live on the App Store and Google Play (v1.0.4), running Expo SDK 54 + React Native 0.81',
+      'pnpm + Turborepo monorepo with shared core packages, powering a second white-label app (על הקצב)',
+      'Five game modes — genre, artist, daily challenge, shuffle, and async duels — backed by Firebase',
+      'Additive-only, backwards-compatible schema and rules so older app versions never break on update',
+      'AdMob rewarded-ad monetization, timezone-aware push notifications, and full analytics instrumentation',
+    ],
+  },
+  {
+    title: 'Catch the Rooster',
+    subtitle: 'Retro Pixel-Art Reflex Game · Live on iOS & Android',
+    image: 'images/projects/catch-the-rooster.svg',
+    date: '2026-06-01',
+    stores: [
+      { label: 'App Store', link: 'https://apps.apple.com/app/id6775168415' },
+      { label: 'Google Play', link: 'https://play.google.com/store/apps/details?id=com.maxkozlov.catchrooster' },
+    ],
+    desc: 'A retro pixel-art reflex game for iOS and Android — tap the bird before it escapes across 20 levels, 4 stages, and 5 worlds. Skia-rendered game loop, synthesized chiptune audio, combos, a golden-bird bonus, and a server-verified global leaderboard.',
+    problem: 'I wanted to push React Native beyond typical app UI into a real-time 60fps game — rendering on the GPU, handling gestures on the UI thread, and stopping client-side score tampering on a global leaderboard.',
+    impact: [
+      'Shipped to the App Store and Google Play, built on Expo + React Native with EAS Build/Update',
+      'Skia-powered render loop (JS thread → Picture → UI thread) targeting smooth 60fps gameplay',
+      'Server-side score integrity via a Firebase Cloud Function (submitScore) + App Check attestation',
+      'Synthesized chiptune audio, combo multipliers, a randomized golden-bird bonus, and Zustand + MMKV state',
+    ],
+  },
+  {
     title: 'Nahal App Migration',
     subtitle: 'Zero-Downtime Legacy Platform Migration',
     image: 'images/projects/legacy-migration.svg',

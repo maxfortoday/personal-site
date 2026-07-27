@@ -72,6 +72,22 @@ const CaseStudy: React.FC<{ data: Project }> = ({ data }) => {
   );
 };
 
+const StoreLinks: React.FC<{ stores: NonNullable<Project['stores']> }> = ({ stores }) => (
+  <div className="flex flex-wrap gap-2 mt-3">
+    {stores.map((store) => (
+      <a
+        key={store.link}
+        href={store.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40 px-2.5 py-1 text-xs font-medium text-blue-600 dark:text-blue-400 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+      >
+        {store.label} <span aria-hidden="true">↗</span>
+      </a>
+    ))}
+  </div>
+);
+
 const CardBody: React.FC<{ data: Project }> = ({ data }) => (
   <div className="p-4">
     <div className="flex items-start justify-between gap-2 mb-1">
@@ -82,7 +98,8 @@ const CardBody: React.FC<{ data: Project }> = ({ data }) => (
       <time className="text-xs text-gray-400 dark:text-gray-500 shrink-0 mt-0.5">{dayjs(data.date).format('MMM YYYY')}</time>
     </div>
     <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mt-2">{data.desc}</p>
-    {data.link && (
+    {data.stores && data.stores.length > 0 && <StoreLinks stores={data.stores} />}
+    {!data.stores && data.link && (
       <span className="inline-flex items-center gap-1 mt-3 text-xs font-medium text-blue-600 dark:text-blue-400">
         View project <span aria-hidden="true">→</span>
       </span>
@@ -92,7 +109,9 @@ const CardBody: React.FC<{ data: Project }> = ({ data }) => (
 );
 
 const Cell: React.FC<Props> = ({ data }) => {
-  if (data.link) {
+  // Cards with store links can't be a card-wide anchor (nested <a> is invalid),
+  // so render a plain card and expose each store as its own link in the body.
+  if (data.link && !(data.stores && data.stores.length > 0)) {
     return (
       <a href={data.link} target="_blank" rel="noopener noreferrer" className={linkCard}>
         <CardImage image={data.image} title={data.title} />

@@ -39,10 +39,16 @@ export interface Category {
   color: string;
 }
 
+export interface StoreLink {
+  label: string;
+  link: string;
+}
+
 export interface Project {
   title: string;
   subtitle: string;
   link?: string;
+  stores?: StoreLink[];
   image?: string;
   date: string;
   desc: string;
