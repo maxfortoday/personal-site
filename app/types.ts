@@ -48,6 +48,8 @@ export interface Project {
   title: string;
   subtitle: string;
   link?: string;
+  // When set (non-empty), store links take precedence: the card is not a
+  // card-wide anchor and `link` is ignored (nested <a> would be invalid).
   stores?: StoreLink[];
   image?: string;
   date: string;

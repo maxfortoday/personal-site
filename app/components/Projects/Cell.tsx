@@ -80,6 +80,7 @@ const StoreLinks: React.FC<{ stores: NonNullable<Project['stores']> }> = ({ stor
         href={store.link}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`${store.label} (opens in a new tab)`}
         className="inline-flex items-center gap-1 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40 px-2.5 py-1 text-xs font-medium text-blue-600 dark:text-blue-400 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
       >
         {store.label} <span aria-hidden="true">↗</span>
